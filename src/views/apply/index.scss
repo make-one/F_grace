@@ -1,0 +1,45 @@
+.body-apply {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  text-align: left;
+  .apply-title {
+    width: 100%;
+    height: 1.2rem;
+    background-color:#409EFF;
+    color: white;
+    .title-total {
+      margin-left: 0.2rem;
+      font-size: 14px;
+    }
+    .title-money {
+      font-size: 28px;
+      margin: 5px 0.2rem 5px 0.2rem;
+      padding-bottom: 0.1rem;
+      border-bottom: 1px solid rgb(121, 174, 196);
+    }
+    .title-content {
+      margin-left: 0.2rem;
+      display: flex;
+      margin-top: 0.1rem;
+      .title-apply {
+        padding-right: 0.65rem;
+        border-right: 1px solid rgb(121, 174, 196);
+        .apply-font {
+          color: rgb(140, 214, 198);
+          font-size: 12px;
+        }
+        .apply-num {
+          padding-top: 5px;
+          font-size: 16px;
+        }
+      }
+    }
+    
+  }
+  .apply-payfor {
+    width: 100%;
+    padding: 0.1rem 0.2rem;
+    background-color: white;
+  }
+}
