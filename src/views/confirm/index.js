@@ -34,7 +34,7 @@ const objtest = {
   test4: 'title-date'
 }
 
-function moneyItem() {
+function moneyItem() { 
   return (
     <div className="confirm-title">
       {moneyList.map((val, index) =>
