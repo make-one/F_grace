@@ -28,14 +28,14 @@ class AppRouter extends Component {
       <Suspense fallback={<PageLoader />}>
         <Router history={Navigator.history}>
           <Switch>
-            <Route exact path="/" render={() => <Redirect to="/order/confirm" />} />
-            {/* <Route
+            <Route exact path="/" render={() => <Redirect to="/dashboard" />} />
+            <Route
               exact
               path="/login"
               render={props => {
                 return <LoginPage {...props} />;
               }}
-            /> */}
+            />
             {routes.map(item => {
               return <Route key={item.path} path={`/${item.path}`} component={item.component} />;
             })}
