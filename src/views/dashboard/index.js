@@ -1,6 +1,6 @@
 import React from "react";
 import './index.scss'
-
+import Navigator from '@/utils/router';
 
 const data = {
   query: {
@@ -11,6 +11,7 @@ const data = {
 }
 
 function linkJump() {
+  Navigator.push('www.baidu.com')
   console.log('jjjjjj')
 }
 
