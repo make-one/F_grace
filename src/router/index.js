@@ -28,7 +28,7 @@ class AppRouter extends Component {
       <Suspense fallback={<PageLoader />}>
         <Router history={Navigator.history}>
           <Switch>
-            <Route exact path="/" render={() => <Redirect to="/order/confirm" />} />
+            <Route exact path="/" render={() => <Redirect to="/order/goods" />} />
             {/* <Route
               exact
               path="/login"

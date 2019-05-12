@@ -6,15 +6,14 @@ import { tabs } from './data'
 
 import './style'
 
-const Apply = lazy(() => import('@/views/apply'));
-const Pay = lazy(() => import('@/views/pay'));
-const Confirm = lazy(() => import('@/views/confirm'));
+const Goods = lazy(() => import('@/views/goods'));
+const Detail = lazy(() => import('@/views/detail'));
 
 class Layout extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      path: 'confirm'
+      path: 'goods'
     };
   }
 
@@ -33,14 +32,12 @@ class Layout extends Component {
     console.log(id)
   
     switch(id) {
-      case 'confirm':
-      return <Confirm />;
-      case 'apply':
-      return <Apply />;
-      case 'pay':
-      return <Pay />;
+      case 'goods':
+      return <Goods />;
+      case 'detail':
+      return <Detail />;
       default:
-      return <Confirm />;
+      return <Goods />;
     }
   }
 
